@@ -21,6 +21,7 @@ $(
             $("#EdadEmpleadoEditar").val(respuesta[0]["edad"]);
             $("#FechaIngresoEmpleadoEditar").val(respuesta[0]["fecha_ingreso"]);
             $("#ComentariosDelEmpleadoEditar").val(respuesta[0]["comentarios"]);
+            $("#SalarioEditar").val(respuesta[0]["salario"]);
             //para los select
             $('#selectid').val(respuesta[0]['genero_id']);
             $('#iddepartamentoselect').val(respuesta[0]['departamento_id']);

@@ -22,6 +22,7 @@ class ControladorPlantilla
                 "edad"                => $_POST['EdadEmpleado'],
                 "fecha_ingreso"    => $_POST["FechaIngresoEmpleado"],
                 "comentarios"             => $_POST["ComentariosDelEmpleado"],
+                "salario"             => $_POST["SalarioEmpleado"],
                 "genero_id"              => $_POST["genero"],
                 "departamento_id"               => $_POST['departamento']
             );
@@ -59,6 +60,7 @@ class ControladorPlantilla
                 "edad"                => $_POST['EdadEmpleadoEditar'],
                 "fecha_ingreso"    => $_POST["FechaIngresoEmpleadoEditar"],
                 "comentarios"             => $_POST["ComentariosDelEmpleadoEditar"],
+                "salario"             => $_POST["SalarioEditar"],
                 "genero_id"              => $_POST["generoEditar"],
                 "departamento_id"               => $_POST['departamentoEditar']
             );

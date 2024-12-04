@@ -42,6 +42,7 @@ $mostrarEmpleados = ControladorPlantilla::ctrMostrarElementos("empleados")
                         <th scope="col">Edad</th>
                         <th scope="col">Fecha Ingreso</th>
                         <th scope="col">Comentarios</th>
+                        <th scope="col">Salario</th>
                         <th scope="col">Genero</th>
                         <th scope="col">Departamento</th>
                         <th scope="col">Acciones</th>
@@ -67,6 +68,9 @@ $mostrarEmpleados = ControladorPlantilla::ctrMostrarElementos("empleados")
                             </td>
                             <td>
                                 <?php echo $value['comentarios'] ?>
+                            </td>
+                            <td>
+                                <?php echo $value['salario'] ?>
                             </td>
                             <td>
                                 <?php echo $value['genero_id'] ?>
@@ -139,6 +143,10 @@ $mostrarEmpleados = ControladorPlantilla::ctrMostrarElementos("empleados")
                             <textarea type="text" name="ComentariosDelEmpleado" class="form-control" id="ComentariosDelEmpleado"></textarea>
                         </div>
                         <div class="mb-3">
+                            <label for="SalarioEmpleado" class="form-label">Salario del empleado</label>
+                            <input type="number" name="SalarioEmpleado" class="form-control" id="SalarioEmpleado" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
                             <label for="" class="form-label">Seleeccione el genero</label>
 
                             <select name="genero" class="form-select" aria-label="Default select example">
@@ -208,6 +216,10 @@ $mostrarEmpleados = ControladorPlantilla::ctrMostrarElementos("empleados")
                         <div class="mb-3">
                             <label for="ComentariosDelEmpleadoEditar" class="form-label">Comentarios sobre el empleado</label>
                             <textarea type="text" name="ComentariosDelEmpleadoEditar" class="form-control" id="ComentariosDelEmpleadoEditar"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="SalarioEditar" class="form-label">Salario del empleado</label>
+                            <input type="number" name="SalarioEditar" class="form-control" id="SalarioEditar" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Seleeccione el genero</label>
